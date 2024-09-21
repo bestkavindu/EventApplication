@@ -58,7 +58,7 @@ class EventController extends Controller
         $EventsData->when = $request->when;
         $EventsData->date = $request->date;
         $EventsData->music_type = $request->music_type;
-        $EventsData->event_type = $request->event_type;
+        $EventsData->event_type = $request->input('event_type');
         $EventsData->zone = $request->zone;
         $EventsData->price = $request->price;
         $EventsData->managerName = $request->managerName;
@@ -68,7 +68,7 @@ class EventController extends Controller
         $EventsData = $EventsData->save();
 
 
-    return redirect()->route('about')->with('success', 'Company has been successfully added');
+    return redirect()->route('event.index')->with('success', 'Company has been successfully added');
 
 
     }

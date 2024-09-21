@@ -165,15 +165,16 @@
                                         <label class="event-label p-2" for="type">Select Event Type</label>
                                         <div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="event_type" id="inlineRadio1" value="Lesson" required>
+                                                {{-- <input class="form-check-input" type="radio" name="event_type" id="inlineRadio1" value="Lesson" required> --}}
+                                                <input class="form-check-input" type="checkbox" name="event_type[]" value="Lesson">
                                                 <label class="form-check-label" for="inlineRadio1">Lesson</label>
                                               </div>
                                               <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="event_type" id="inlineRadio2" value="Traning" required>
+                                                <input class="form-check-input" type="checkbox" name="event_type[]" value="Traning">
                                                 <label class="form-check-label" for="inlineRadio2">Traning</label>
                                               </div>
                                               <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="event_type" id="inlineRadio3" value="Dancing" required>
+                                                <input class="form-check-input" type="checkbox" name="event_type[]"  value="Dancing">
                                                 <label class="form-check-label" for="inlineRadio3">Dancing</label>
                                               </div>
                                         </div>

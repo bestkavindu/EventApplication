@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('when');
             $table->timestamp('date');
             $table->text('music_type');
-            $table->text('event_type');
+            $table->jsonb('event_type');
             $table->text('zone');
             $table->text('price');
             $table->text('managerName');

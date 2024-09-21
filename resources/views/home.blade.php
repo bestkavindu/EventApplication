@@ -440,7 +440,12 @@
                             </div>
     
                             <div class="col-md-4">
-                                <h6 class= "text-start fs-6"><span class="text-primary">Event type: </span>{{$value->event_type}}</h6>
+                                <h6 class= "text-start fs-6"><span class="text-primary">Event type: </span>
+                                    @foreach ((array) $value['event_type'] as $item)
+                                        {{$item}}
+                                    @endforeach
+                             
+                                </h6>
                             </div>
     
                             <div class="col-md-4">

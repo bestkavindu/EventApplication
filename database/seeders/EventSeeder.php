@@ -20,7 +20,7 @@ class EventSeeder extends Seeder
             'when' => 'mer, 18 settembre, 20:30 – 20:31',
             'date' => '2024-09-18',
             'music_type' => 'Rock',
-            'event_type' => 'Lesson',
+            'event_type' => '[Lesson]',
             'zone' => 'test1',
             'price' => '20 euro',
             'managerName' => 'Sachin kavindu',
