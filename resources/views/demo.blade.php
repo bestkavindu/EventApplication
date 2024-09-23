@@ -65,11 +65,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="/" class="nav-item nav-link ">Home</a>
-                    <a href="/event" class="nav-item nav-link active">Event</a>
-                    <a href="/demo" class="nav-item nav-link">Demo</a>
+                    <a href="/event" class="nav-item nav-link">Event</a>
+                    <a href="/demo" class="nav-item nav-link active">Demo</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-outline-primary py-2 px-3" href="#event_add_box">
+                    <a class="btn btn-outline-primary py-2 px-3" href="/event">
                         Add a Event
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>
@@ -101,20 +101,12 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-10 align-items-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-6 text-white mb-5">Do you want to insert a new event?</h1>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                
-                        @if (session('success'))
-                        <div class="succes-text d-inline-block rounded-pill py-3 px-4 mb-3">{{ session('success') }}</div>
-    
-                    @endif
-                    </div>
 
                 </div>
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                     <div class="h-100 bg-white p-5">
 
-                        <form action="{{ route('events.store') }}" method="POST">
+                        <form>
                             @csrf
                             <div class="">
                                 <div class="row">
@@ -159,15 +151,6 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-6">
-                                        <label class="event-label p-2" for="type">Select Music Type</label>
-                                        <select class="bg-light form-select" aria-label="Default select example" name="music_type" required>
-                                            @foreach ($musictypes as $type)
-                                                <option value="{{$type->name}}">{{$type->name}}</option>
-                                            @endforeach
-                                            
-                                        </select>
-                                    </div>
     
                                     <div class="col-lg-6">
                                         <label class="event-label p-2" for="type">Select Event Type</label>

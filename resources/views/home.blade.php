@@ -63,7 +63,7 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="/" class="nav-item nav-link active">Home</a>
                     <a href="/event" class="nav-item nav-link">Event</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="/demo" class="nav-item nav-link">Demo</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn btn-outline-primary py-2 px-3" href="/event">
@@ -228,7 +228,6 @@
             </a>
             @endforeach
             @endforeach
-
         </div>
     </div>
 
