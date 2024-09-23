@@ -77,7 +77,7 @@ class EventController extends Controller
         Mail::to($to)->send(new EventMail($title,$msg));
 
 
-    return redirect()->route('event.index')->with('success', 'Company has been successfully added');
+    return redirect()->route('event.index')->with('success', 'Thank you for adding Event, When approve admin it will be show in the website');
 
 
     }

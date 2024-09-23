@@ -429,7 +429,7 @@
     
                 <div class="modal-body">
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-3">
-                        <h4 class="my-3">{{ $value->title }}</h4>
+                        <h4 class="my-4">{{ $value->title }}</h4>
     
                         <h5 class= "text-primary event-desc-title">Location</h5>
                          <h5 class= "text-start fs-6 mb-3"> {{$value->where}} , {{$value->zone}} <span class="text-primary">at: </span> {{$value->when}}</h5>

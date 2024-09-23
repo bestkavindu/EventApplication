@@ -26,6 +26,7 @@ class EventSeeder extends Seeder
             'managerName' => 'Sachin kavindu',
             'email' => 'test@gmail.com',
             'phone' => '0775835977',
+            'status' => 1,
             'desc' => "La pratica non è una lezione, ma non è neppure una milonga... allora cos'è? Per noi è uno spazio informale e accogliente dove confrontarsi e mettersi in gioco approfittando dei maestri presenti ;)",
         ]);
     }

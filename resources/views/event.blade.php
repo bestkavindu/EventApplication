@@ -33,9 +33,11 @@
         .event-label{
             font-weight: 700;
         }
-        .aa{
-            cursor: pointer;
+        .succes-text{
+            background-color: #5cb85c !important;
+            color: white;
         }
+
     </style>
 @endsection
 
@@ -100,12 +102,18 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-10 align-items-center wow fadeIn" data-wow-delay="0.1s">
                     <h1 class="display-6 text-white mb-5">Do you want to insert a new event?</h1>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                
+                        @if (session('success'))
+                        <div class="succes-text d-inline-block rounded-pill py-3 px-4 mb-3">{{ session('success') }}</div>
+    
+                    @endif
+                    </div>
+
                 </div>
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                     <div class="h-100 bg-white p-5">
-                        @if (session('success'))
-                        <p>{{ session('success') }}</p>
-                    @endif
+
                         <form action="{{ route('events.store') }}" method="POST">
                             @csrf
                             <div class="">

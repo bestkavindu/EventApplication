@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-     $events = Event::where('status',0)->get()->groupBy('date');
+     $events = Event::where('status',1)->get()->groupBy('date');
      return view('home', compact('events'));
     }
 }
