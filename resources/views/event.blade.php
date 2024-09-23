@@ -162,10 +162,10 @@
                                     <div class="col-lg-6">
                                         <label class="event-label p-2" for="type">Select Music Type</label>
                                         <select class="bg-light form-select" aria-label="Default select example" name="music_type" required>
-                                            <option selected value="Rock">Rock</option>
-                                            <option value="Pop music">Pop</option>
-                                            <option value="Electronic">Electronic </option>
-                                            <option value="Country">Country</option>
+                                            @foreach ($musictypes as $type)
+                                                <option value="{{$type->name}}">{{$type->name}}</option>
+                                            @endforeach
+                                            
                                         </select>
                                     </div>
     

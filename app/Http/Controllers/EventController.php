@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\EventMail;
 use App\Models\Event;
+use App\Models\MusicType;
 use Validator;
 
 class EventController extends Controller
@@ -16,7 +17,8 @@ class EventController extends Controller
      */
     public function index()
     {
-        return view('event');
+        $musictypes = MusicType::all();
+        return view('event',compact('musictypes'));
     }
 
 
