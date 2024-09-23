@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\EventMail;
 use App\Models\Event;
 use Validator;
 
@@ -16,6 +18,7 @@ class EventController extends Controller
     {
         return view('event');
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -68,6 +71,12 @@ class EventController extends Controller
         $EventsData = $EventsData->save();
 
 
+        $to = $request->email;
+        $title = $request->title;
+        $msg = "Event was submitted, After the admin aprovel event will show in site.";
+        Mail::to($to)->send(new EventMail($title,$msg));
+
+
     return redirect()->route('event.index')->with('success', 'Company has been successfully added');
 
 
@@ -104,4 +113,5 @@ class EventController extends Controller
     {
         //
     }
+
 }
