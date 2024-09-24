@@ -16,12 +16,15 @@ return new class extends Migration
             $table->text('title');
             $table->text('where');
             $table->text('when');
+            $table->text('zone');
             $table->datetime('date');
+            $table->text('start_time');
+            $table->text('end_time');
             $table->text('music_type');
             $table->jsonb('event_type');
-            $table->text('zone');
             $table->text('price');
-            $table->text('managerName');
+            $table->text('first_name');
+            $table->text('sur_name');
             $table->text('email');
             $table->text('phone');
             $table->text('desc');

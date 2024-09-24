@@ -139,7 +139,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label class="event-label p-2" for="when">When (Day, Start Time, End Time)</label>
+                                        <label class="event-label p-2" for="when">When</label>
                                         <div class="form-floating">
     
                                             <input type="text" class="form-control bg-light border-0" id="when"
@@ -150,10 +150,41 @@
     
     
                                     <div class="col-md-6">
+                                        <label class="event-label p-2" for="zone">Enter Zone</label>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-light border-0" id="zone"
+                                                name="zone" placeholder="Enter Zone" required>
+                                            <label for="zone">Enter Zone</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
                                         <label class="event-label p-2" for="when">Please Select Date</label>
                                         <div class="form-floating">
                                             <input class="form-control bg-light mb-3" type="date" id="date"
                                                 name="date" value="" min="" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label class="event-label p-2" for="start_time">Start Time</label>
+                                        <div class="form-floating">
+    
+                                            <input type="text" class="form-control bg-light border-0" id="start_time"
+                                                name="start_time" placeholder="Start time" required>
+                                            <label for="start_time">Start time</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label class="event-label p-2" for="end_time">End Time</label>
+                                        <div class="form-floating">
+    
+                                            <input type="text" class="form-control bg-light border-0" id="end_time"
+                                                name="end_time" placeholder="End time" required>
+                                            <label for="end_time">End time</label>
                                         </div>
                                     </div>
                                 </div>
@@ -193,14 +224,27 @@
 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label class="event-label p-2" for="zone">Enter Zone</label>
+                                        <label class="event-label p-2" for="fiest_name">First Name</label>
                                         <div class="form-floating">
-                                            <input type="text" class="form-control bg-light border-0" id="zone"
-                                                name="zone" placeholder="Enter Zone" required>
-                                            <label for="zone">Enter Zone</label>
+                                            <input type="text" class="form-control bg-light border-0" id="fiest_name"
+                                                name="fiest_name" placeholder="First Name" required>
+                                            <label for="fiest_name">First Name</label>
                                         </div>
                                     </div>
-    
+
+                                    <div class="col-md-6">
+                                        <label class="event-label p-2" for="sur_name">SurName</label>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-light border-0" id="sur_name"
+                                                name="sur_name" placeholder="SurName" required>
+                                            <label for="sur_name">SurName</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
                                     <div class="col-md-6">
                                         <label class="event-label p-2" for="price">Price</label>
                                         <div class="form-floating">
@@ -214,15 +258,6 @@
 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label class="event-label p-2" for="managerName">Manager Name (First name, Surname)</label>
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control bg-light border-0" id="managerName"
-                                                name="managerName" placeholder="Manager Name(First name, Sir name)" required>
-                                            <label for="managerName">Manager Name</label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-md-6">
                                         <label class="event-label p-2" for="zone">Email</label>
                                         <div class="form-floating">
                                             <input type="email" class="form-control bg-light border-0" id="email"
@@ -231,9 +266,6 @@
                                         </div>
                                     </div>
 
-                                </div>
-
-                                <div class="row">
                                     <div class="col-md-6">
                                         <label class="event-label p-2" for="phone">Phone number</label>
                                         <div class="form-floating">

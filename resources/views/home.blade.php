@@ -212,11 +212,11 @@
                         <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                             <!-- <i class="fas fa-book"></i> -->
              
-                            <h6 class="text-start text-primary mb-3">{{$value->when}}</h6>
+                            <h6 class="text-start text-primary mb-3">{{$value->date}}, {{$value->start_time}} - {{$value->end_time}}</h6>
                             <h4 class="event-title mb-2">{{$value->title}}</h4>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p class= "text-start fs-6">By: {{$value->managerName}}, {{$value->when}}</p>
+                                    <p class= "text-start fs-6">By: {{$value->first_name}} {{$value->sur_name}}, {{$value->when}}</p>
                                 </div>
     
                             </div>
@@ -431,7 +431,7 @@
                         <h4 class="my-4">{{ $value->title }}</h4>
     
                         <h5 class= "text-primary event-desc-title">Location</h5>
-                         <h5 class= "text-start fs-6 mb-3"> {{$value->where}} , {{$value->zone}} <span class="text-primary">at: </span> {{$value->when}}</h5>
+                         <h5 class= "text-start fs-6 mb-3"> {{$value->where}} , {{$value->zone}} <span class="text-primary">at: </span> {{$value->when}}, {{$value->start_time}} - {{$value->end_time}}</h5>
     
                          <div class="row mb-3">
                             <div class="col-md-4">
