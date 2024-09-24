@@ -61,12 +61,15 @@ class EventController extends Controller
         $EventsData->title = $request->title;
         $EventsData->where = $request->where;
         $EventsData->when = $request->when;
-        $EventsData->date = $request->date;
+        $EventsData->date =  \Carbon\Carbon::parse($request->date)->format('Y-m-d');
+        $EventsData->start_time = $request->start_time;
+        $EventsData->end_time = $request->end_time;
         $EventsData->music_type = $request->music_type;
         $EventsData->event_type = $request->input('event_type');
         $EventsData->zone = $request->zone;
         $EventsData->price = $request->price;
-        $EventsData->managerName = $request->managerName;
+        $EventsData->first_name = $request->first_name;
+        $EventsData->sur_name = $request->sur_name;
         $EventsData->email = $request->email;
         $EventsData->phone = $request->phone;
         $EventsData->desc = $request->desc;

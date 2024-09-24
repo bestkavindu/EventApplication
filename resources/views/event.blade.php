@@ -224,11 +224,11 @@
 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label class="event-label p-2" for="fiest_name">First Name</label>
+                                        <label class="event-label p-2" for="first_name">First Name</label>
                                         <div class="form-floating">
-                                            <input type="text" class="form-control bg-light border-0" id="fiest_name"
-                                                name="fiest_name" placeholder="First Name" required>
-                                            <label for="fiest_name">First Name</label>
+                                            <input type="text" class="form-control bg-light border-0" id="first_name"
+                                                name="first_name" placeholder="First Name" required>
+                                            <label for="first_name">First Name</label>
                                         </div>
                                     </div>
 

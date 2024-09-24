@@ -29,6 +29,7 @@ class Event extends Model
 
     protected $casts = [
         'event_type' => 'array',
-        'date'=> 'datetime',
+        'date' => 'date:Y-m-d',
+
     ];
 }
