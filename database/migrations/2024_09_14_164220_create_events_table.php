@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('where');
             $table->text('when');
             $table->text('zone');
-            $table->datetime('date');
+            $table->date('date');
             $table->text('start_time');
             $table->text('end_time');
             $table->text('music_type');
